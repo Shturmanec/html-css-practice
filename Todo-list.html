@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            background-color: azure;
+        } 
+        span{
+            color: darkred;
+            display: inline-block;
+            margin-left: 1em;
+        }
+        ul{
+             list-style-type: none ;
+        }
+        li{
+             list-style-image:  url(icons/unchecked_16.png);
+             list-style-position: inside;
+        }
+        li:nth-child(odd){
+            background-color: rgb(47, 26, 231);
+        }
+        li:nth-child(even){
+            background-color: rgb(red, green, blue)
+        }
+        li.checked{
+            background-color: lightgreen;
+        }
+        .checked {
+                list-style-image: url(icons/checked_16.png);
+                text-decoration: line-through;
+                background-color: rgb(31, 146, 92);
+        }
+    </style>
+</head>
+<body>
+  <section>
+    <h1> My To Do List</h1>
+    <ul>
+        <li> Hit the gym<span> x </span></li>
+        <li class="checked"> Pay bills <span> x </span></li>
+        <li> Meet John <span> x </span></li> 
+        <li> Buy eggs <span> x </span></li> 
+    </ul>
+  </section>  
+</body>
+</html>
